@@ -15,7 +15,8 @@ function App() {
   const [search, setSearch] = useState('')
   
   const addItem = (items) =>{
-    const id = item.length+1
+    const id = item.length ? (item[item.length -1].id )+1 : 1
+    alert(id)
     const addNewItems = {
       id: id,
       checked : false,
@@ -59,8 +60,7 @@ function App() {
         setSearch={setSearch}
       />
       <Content 
-        item = {item.filter(item => ((item.items).toLowerCase()).includes(search.toLowerCase()))
-        }
+        item = {item.filter(item => ((item.items).toLowerCase()).includes(search.toLowerCase()))}
         handlechange={handlechange}
         handledelete={handledelete}
       />

@@ -8,7 +8,6 @@ const Search = ({search, setSearch}) =>{
             </label>
             <input id='inp'
                 type='text'
-                autoFocus
                 value={search}
                 onChange={(e)=> setSearch(e.target.value)}
             />

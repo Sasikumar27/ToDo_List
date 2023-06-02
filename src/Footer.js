@@ -4,8 +4,9 @@ const Footer = ({length}) => {
     const year = new Date();
   return (
     <footer className='foot'>
-      <p>{length} {length ===1 ? "item" :"items" } </p>
-      Copyright &copy; {year.getFullYear()} </footer>
+      <p>{length} {length ===1 ? "item" :"items" } 
+      <br/> Copyright &copy; {year.getFullYear()} </p>
+      </footer>
   )
 }
 
