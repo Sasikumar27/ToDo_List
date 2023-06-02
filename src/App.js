@@ -15,10 +15,9 @@ function App() {
   const [search, setSearch] = useState('')
   
   const addItem = (items) =>{
-    const id = item.length ? (item[item.length -1].id )+1 : 1
-    alert(id)
+    const id = item.length +1
     const addNewItems = {
-      id: id,
+      id,
       checked : false,
       items: items
     }
