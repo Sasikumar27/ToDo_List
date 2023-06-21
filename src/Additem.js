@@ -9,16 +9,16 @@ const Additem = ({newItem, setNewitem ,handlesubmit}) => {
         <label htmlFor="addItem">
             Add your task
         </label>
-        <input 
+        <input className='searchbox'
             ref={inputref}
             id='inp' type="text" 
-            placeholder='type'
+            placeholder=' Enter here'
             autoFocus
             value={newItem}
             onChange={(e)=> setNewitem(e.target.value)}
         />
         <button 
-          className='but'
+          className='buttonadd'
           type='submit'
           onClick={ () => inputref.current.focus()}
         >

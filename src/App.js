@@ -1,7 +1,7 @@
 import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Additem from './Additem';
 import Search from './Search';
@@ -92,21 +92,23 @@ function App() {
     
   return (
     <div>  
-      <Header title="TO DO LIST" /> 
-      <Additem 
-        newItem = {newItem}
-        setNewitem= {setNewitem}
-        handlesubmit= {handlesubmit}
-      />    
-      <Search 
-        search={search}
-        setSearch={setSearch}
-      />
-       <Content 
-          item = {item.filter(item => ((item.items).toLowerCase()).includes(search.toLowerCase()))}
-          handlechange={handlechange}
-          handledelete={handledelete}
+      <Header title="TO DO LIST" />
+      <body className='body'>
+        <Additem 
+          newItem = {newItem}
+          setNewitem= {setNewitem}
+          handlesubmit= {handlesubmit}
+        />    
+        <Search 
+          search={search}
+          setSearch={setSearch}
         />
+        <Content 
+            item = {item.filter(item => ((item.items).toLowerCase()).includes(search.toLowerCase()))}
+            handlechange={handlechange}
+            handledelete={handledelete}
+          />
+      </body> 
       <Footer 
         length = {item.length}p
       />
