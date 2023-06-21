@@ -1,18 +1,19 @@
 import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Additem from './Additem';
 import Search from './Search';
 
 function App() {
   //const API_URL = " http://localhost:3500/items"
-  const [item, setItem] = useState (
-    JSON.parse(localStorage.getItem('todolist'))
-  )
+  const [item, setItem] = useState([])
   const [newItem, setNewitem] = useState('')
   const [search, setSearch] = useState('')
+  useEffect( () => {
+    JSON.parse(localStorage.getItem('todolist'))
+  },[] )
   
 /*   useEffect (()=> {
       const fetchitems = () =>{
