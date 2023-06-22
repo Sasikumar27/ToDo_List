@@ -1,180 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Bebas+Neue&family=Trocchi&display=swap');
 *{
   font-family: 'Baskervville', serif;
-}
-/* .header{
-  position:static;
-  left: 0;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding-top: 0.1px;
-  padding-bottom: 0.01px;
-  background: radial-gradient(circle,rgb(234, 177, 177),rgb(120, 120, 161))
-}
- .body{
-  min-height: 81.5vh;
-  width: 100vw;
-}
-
-.foot{
-  position:sticky;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgb(154, 154, 154);
-  color: white;
-}
-ul{
-  list-style-type:none;
-}
-.label{
-  font-size: 8vh;
-  height: 70px;
-  min-width: 300px;
-  display:inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-.checkbox{  
-  margin-left: 25vw;
-  margin-top: 2%;
-  width: 90px;
-  height: 10vh;
-}
-.button{
-  margin-left: 30px;
-  width: 40px;
-  height: 40px;
-}
-.button:hover{
-  background-color: red;
-}
-.form{
-  margin-top: 30px;
-  justify-content:center;
-  display: flex;
-  align-items: center;
-}
-#inp{
-  width:max-content;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.but:hover{
-  background-color: rgb(44, 221, 44);
-}
-@media  (max-width: 480px) {
-
-  .label{
-    font-size: 200%;
-    height: 40px;
-    min-width: 200px;
-    margin-bottom: 5%;
-  }
-  .checkbox{
-    position: static;
-    background-color: aquamarine; 
-    margin-top: 10px;
-    width: 28%;
-    margin-left: -50px;
-  }
-  .button{
-    margin-left: 20px;
-    width: 45px;
-    height: 45px;
-  }
-  .button:hover{
-    background-color: red;
-  }  
-  .searchform{
-    margin-left: 5%;
-    margin-top: 20px;
-    margin-bottom: 10%;
-  }
-  .searchbox{
-   border-radius: 5px;
-    height: 30px;
-  }
-  .buttonadd{
-    width: 40px;
-    height: 35px;
-  }
-} 
-
-html{
-  border: 0;
-  padding: 0;  
-  box-sizing: border-box;
-}
-.header{
-  position:static;
-  left: 0;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  padding-top: 0.1px;
-  padding-bottom: 0.01px;
-  background: radial-gradient(circle,rgb(234, 177, 177),rgb(120, 120, 161))
-}
-.main{
-  min-height: 100vh;
-}
-
-.foot{
-  position:sticky;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgb(154, 154, 154);
-  color: white;
-}
-ul{
-  list-style-type:disc;
-}
-.div{
-  margin-top: 30%;
-  text-align: center;
-}
-.label{
-  display:inline-block;
-  width: 300px;
-  margin-left: 5px;
-}
-ul{
-  list-style: none;
-}
-.butt{
-  width: 30px;
-  height: 25px;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-.butt:hover{
-  background-color: red;
-}
-
-.form{
-  margin-top: 30px;
-  justify-content:center;
-  display: flex;
-  align-items: center;
-}
-#inp{
-  width:max-content;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.but:hover{
-  background-color: rgb(44, 221, 44);
-}
-@media (min-width: 450){
-  
-}*/
-
-*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -204,7 +30,7 @@ ul{
   padding: 2px;
   border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #000000, -2px -2px 5px #ffffff; 
+  box-shadow: 2px 2px 5px #191818, -2px -2px 5px #ffffff; 
 }
 .form button{
   padding: 5px;
@@ -219,7 +45,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .searchform label{
   margin-right: 20px;
@@ -230,15 +56,17 @@ ul{
   padding: 2px;
   border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #000000, -2px -2px 5px #ffffff; 
+  box-shadow: 2px 2px 5px #978787, -2px -2px 5px #ffffff; 
 }
 .list{
- min-height: 55vh;
+ min-height: 56vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .task{
   margin-left: 28vw;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0px;
   margin-right: 100px;
   list-style: none;
 }
@@ -282,12 +110,7 @@ ul{
 }
 
 @media (max-width: 500px) {
-  .header{
-    min-width: 110vw;
-  }
-  .footer{
-    min-width: 110vw;
-  }
+  
   .newitem{
     margin-left: 100px;
   }
@@ -301,7 +124,7 @@ ul{
     margin-left: 90px;
   }
   .list{
-    min-width: 110vw;
+    min-height: 56vh;
   }
   .task{
     min-width: 410px;
@@ -314,7 +137,7 @@ ul{
   .task label{
     padding: 30px;
     font-size: 20px;
-    min-width: 300px;
+    min-width: 280px;
   }
   .task button{
     font-size: 30px;
