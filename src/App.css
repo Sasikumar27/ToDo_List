@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .searchform label{
   margin-right: 20px;
@@ -62,10 +62,9 @@
  min-height: 56vh;
  display: flex;
  justify-content: center;
- align-items: center;
 }
 .task{
-  margin-left: 28vw;
+  margin-left: -5vw;
   margin-top: 0px;
   margin-right: 100px;
   list-style: none;
@@ -110,7 +109,6 @@
 }
 
 @media (max-width: 500px) {
-  
   .newitem{
     margin-left: 100px;
   }
@@ -124,11 +122,11 @@
     margin-left: 90px;
   }
   .list{
-    min-height: 56vh;
+    min-height: 65vh;
   }
   .task{
     min-width: 410px;
-    margin-left: -30px;
+    margin-left: 100px;
   }
   .task input{
     width: 30px;
