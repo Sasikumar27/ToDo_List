@@ -14,7 +14,6 @@ const Additem = ({newItem, setNewitem ,handlesubmit}) => {
               ref={inputref}
               id='inp' type="text" 
               placeholder=' Enter here'
-              autoFocus
               value={newItem}
               onChange={(e)=> setNewitem(e.target.value)}
           />
