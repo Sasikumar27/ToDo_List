@@ -7,10 +7,16 @@ import Additem from './Additem';
 import Search from './Search';
 
 function App() {
+    
   //const API_URL = " http://localhost:3500/items"
+
   const [item, setItem] = useState (
     JSON.parse(localStorage.getItem('todolist'))
   )
+  if(item === null)
+  {
+    localStorage.setItem("todolist", JSON.stringify([]))
+  }
   const [newItem, setNewitem] = useState('')
   const [search, setSearch] = useState('')
   
@@ -92,7 +98,7 @@ function App() {
     
   return (
     <div>  
-      <Header title="TO DO LIST" />
+      <Header title="TO-DO HUB" />
       <body className='body'>
         <Additem 
           newItem = {newItem}

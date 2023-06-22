@@ -13,7 +13,7 @@ const Content = ({item, handlechange, handledelete }) => {
          />
         ) :  
       (
-        <p>Your list is Empty..</p>
+        <p className='list'>Your list is Empty..</p>
       )}
    </>
   )
