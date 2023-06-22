@@ -9,12 +9,10 @@ import Search from './Search';
 function App() {
     
   //const API_URL = " http://localhost:3500/items"
-
   const [item, setItem] = useState (
     JSON.parse(localStorage.getItem('todolist'))
   )
-  if(item === null)
-  {
+  if(item === null){
     localStorage.setItem("todolist", JSON.stringify([]))
   }
   const [newItem, setNewitem] = useState('')
